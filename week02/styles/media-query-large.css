@@ -1,0 +1,9 @@
+@media screen and (min-width: 500px) {
+    .media-query header {
+        background-color: black;
+        color: white;
+    }
+    .media-query main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
