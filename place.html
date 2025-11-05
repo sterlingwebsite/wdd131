@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 Assignment: Country Page</title>
+    <meta name="description" content="Design and build a responsive webpage about a country or place of interest, using HTML, CSS, and JavaScript to match a provided wireframe layout, implement best practices, and dynamically display weather details including windchill.">
+    <meta name="author" content="Sterling Steele">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body class="place">
+    <header>
+        <h1>Utah</h1>
+        <div class="spacer"></div>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/utah-map-small.jpg">
+            <source media="(max-width: 750px)" srcset="images/utah-map-medium.jpg">
+            <img class="hero" src="images/utah-map-large.jpg" alt="picture of the boundaries of the state of Utah">
+        </picture>
+        <div class="spacer1"> </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul class="info">
+                <li><strong>Area:</strong><p>219,890 sq km</p></li>
+                <li><strong>Population:</strong><p>3,506,838</p></li>
+                <li><strong>Capital:</strong><p>Salt Lake City</p></li>
+                <li><strong>Languages:</strong><p>English</p></li>
+                <li><strong>Currency:</strong><p>US Dollar</p></li>
+                <li><strong>Time Zone:</strong><p>UTC-7 and UTC-6(Daylight Savings)</p></li>
+                <li><strong>Calling Code:</strong><p>+1 </p></li>
+                <li><strong>Internet TLD:</strong><p>.us</p></li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/sunny.png" alt="icon of the sun" class="sunny-icon">
+            <ul>
+                <li><strong>Temperature:</strong><p> 9.7 °C</p></li>
+                <li><strong>Conditions:</strong><p> Sunny</p></li>
+                <li><strong>Wind:</strong><p> 18 km/h</p></li>
+                <li><strong>Wind Chill:</strong><p> <span id="windchill"></span> °C</p></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💷 Sterling Steele 💷 Utah</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

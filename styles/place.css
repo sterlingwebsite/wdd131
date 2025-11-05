@@ -1,0 +1,133 @@
+/* universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+:root {
+    --primary-color: #d21034;
+    --secondary-color: #007849;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.place header {
+    /* background: var(--primary-color); */
+    color: white;
+    /* padding: 1rem; */
+    text-align: center;
+}
+
+.place header h1{
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.place header div {
+    height: 1rem;
+    background-color: var(--secondary-color);
+}
+
+/* main */
+.place main picture img {
+    width: 100%;
+    display: block;
+}
+
+.place main .spacer1 {
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.place main .data h2, .place main .weather h2 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.place main .data li, .place main .weather li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.3rem 0;
+}
+
+.place main .data strong, .place main .weather strong {
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+.place main .data p, .place main .weather p {
+    grid-column: 2 / 3;
+    padding-left: 1rem;
+}
+
+.place main .weather .sunny-icon {
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+.place main .weather ul {
+    margin: 1rem 0;
+}
+
+/* footer */
+.place footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* @media effects */
+@media (min-width: 750px) {
+    /* main */
+    .place main {
+        position: relative;
+    }
+
+    /* .data */
+    .place main .data, .place main .weather {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        width: 15rem;
+        background-color: rgba(255, 255, 255, 0.75);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .place main .data h2, .place main .weather h2 {
+        font-size: 1.2rem;
+        background-color: var(--secondary-color);
+        width: 93%;
+        position: relative;
+        right: 8px;
+        margin-top: 0.5rem;
+        text-align: left;
+        padding: 1rem;
+        color: white;
+    }
+
+    .place main .data ul, .place main .weather ul {
+        font-size: 0.8rem;
+    }
+
+    .place main .data li, .place main .weather li {
+        padding: 0.2rem 0;
+    }
+
+    .place main .weather {
+        top: auto;
+        left: auto;
+        right: 1rem;
+        bottom: 2rem;
+    }
+
+    .place main .weather .sunny-icon {
+        position: relative;
+        left: 55px;
+        bottom: 53px;
+    }
+}
