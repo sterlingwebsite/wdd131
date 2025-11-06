@@ -14,9 +14,7 @@
 
 /* header */
 .place header {
-    /* background: var(--primary-color); */
     color: white;
-    /* padding: 1rem; */
     text-align: center;
 }
 
@@ -73,10 +71,6 @@
     margin: auto;
 }
 
-/* .place main .weather ul {
-    margin: 1rem 0;
-} */
-
 /* footer */
 .place footer {
     background: var(--primary-color);
@@ -122,6 +116,7 @@
         padding: 0.2rem 0;
     }
 
+    /* .weather */
     .place main .weather {
         top: auto;
         left: auto;
