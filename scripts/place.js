@@ -2,14 +2,7 @@
 const temp = 9.7;
 const wind = 18;
 
-function calculateWindChill(t, v) {
-    if (t <= 10 && v > 4.8) {
-        const wci = 13.12 + 0.6215 * t - 11.37 * Math.pow(v, 0.16) + 0.3965 * t * Math.pow(v, 0.16);
-        return wci.toFixed(1);
-    } else {
-        return "N/A";
-    }
-}
+const calculateWindChill = (t, v) => (t <= 10 && v > 4.8) ? (13.12 + 0.6215 * t - 11.37 * v**0.16 + 0.3965 * t * v**0.16).toFixed(1) : "N/A";
 
 document.querySelector("#windchill").textContent = calculateWindChill(temp, wind);
 
