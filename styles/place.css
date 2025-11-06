@@ -129,10 +129,8 @@
         bottom: 2rem;
     }
 
-    .place main .weather .sunny-icon {
-        position: relative;
-        left: 55px;
-        bottom: 53px;
-        margin-bottom: -53px;
+    .place main .weather h2::after {
+        content: "☀️";
+        margin-left: 5.5rem;
     }
 }
