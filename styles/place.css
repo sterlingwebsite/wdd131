@@ -128,4 +128,8 @@
         content: "☀️";
         margin-left: 5.5rem;
     }
+
+    .place main .weather .sunny-icon {
+        display: none;
+    }
 }
