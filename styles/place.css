@@ -47,6 +47,10 @@
     padding: 1rem 0;
 }
 
+.place main .data ul, .place main .weather ul {
+    padding: 1rem 0;
+}
+
 .place main .data li, .place main .weather li{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,9 +73,9 @@
     margin: auto;
 }
 
-.place main .weather ul {
+/* .place main .weather ul {
     margin: 1rem 0;
-}
+} */
 
 /* footer */
 .place footer {
@@ -129,5 +133,6 @@
         position: relative;
         left: 55px;
         bottom: 53px;
+        margin-bottom: -53px;
     }
 }
