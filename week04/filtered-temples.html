@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W02 Assignment: Temple Picture Album</title>
+    <meta name="description" content="Design a responsive temple album using HTML, CSS, and JavaScript with image captions, mobile-friendly layout, dynamic navigation, and a footer.">
+    <meta name="author" content="Sterling Steele">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body class="temples">
+    <header>
+        <h2>Temple Album</h2>
+        <button id="hamburger" type="button" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="figure-grid" id="temples-container">
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Sterling Steele | Utah</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
