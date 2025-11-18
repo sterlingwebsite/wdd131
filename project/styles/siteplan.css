@@ -1,0 +1,79 @@
+/* variables */
+:root {
+    --primary-color: rgb(0, 70, 0);
+    --secondary-color: gold;
+    --neutral-base: lightgray;
+}
+
+* {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* color schema */
+body {
+    background-color: var(--neutral-base);
+    color: black;
+    font-family: Arial, sans-serif;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+}
+
+header h1 {
+    color: var(--secondary-color);
+}
+
+h2, h3, h4 {
+    color: var(--primary-color);
+}
+
+h2, h3, h4, p {
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2, h4 {
+    color: var(--primary-color);
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.25rem solid var(--secondary-color);
+    border-radius: 0.25rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--secondary-color);
+}
+button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+section {
+    background-color: var(--neutral-base);
+    border: 0.25rem solid var(--primary-color);
+    border-radius: 0.5rem;
+}
