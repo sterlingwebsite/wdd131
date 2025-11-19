@@ -16,7 +16,7 @@ body {
     background-color: var(--neutral-base);
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    width: 500px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
