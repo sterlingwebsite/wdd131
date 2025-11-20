@@ -1,0 +1,137 @@
+/* universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #2d032b;
+    --secondary-color: #d5cdd5;
+    --extra-color: #181c83;
+}
+
+/* body */
+body {
+    width: 50%;
+    margin: auto;
+}
+
+/* header */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* main */
+form {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.overall-rating label {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productName {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    border: none;
+}
+
+.overall-rating div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.overall-rating legend {
+    margin-bottom: 0.25rem;
+}
+
+.overall-rating {
+    margin-bottom: 1.25rem;
+}
+
+#installDate {
+    margin-bottom: 1.25rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+}
+
+.product-features p {
+    margin-bottom: 0.25rem;
+}
+
+.product-features input {
+    transform: scale(1.5);
+    margin: 5px;
+    margin-right: 0.8rem;
+}
+
+.product-features {
+    margin-bottom: 1rem;
+}
+
+.optional-word {
+    color: var(--extra-color);
+}
+
+textarea {
+    border: none;
+    width: 100%;
+    resize: none;
+    margin-bottom: 1.25rem;
+}
+
+#userName {
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.submit-button {
+    border: 1px solid #727272;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+}
