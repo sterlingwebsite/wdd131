@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "gratitude-reflection",
         "tithing-reflection",
         "eternal-perspective-reflection",
+        "budget-wisely-reflection",
     ];
     reflectionIds.forEach(id => {
         const savedNote = localStorage.getItem(id);
