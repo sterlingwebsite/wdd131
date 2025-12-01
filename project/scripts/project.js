@@ -26,11 +26,43 @@ function showCard(index) {
         card.classList.toggle('active', i == index);
     });
 }
-document.querySelector('.next').addEventListener('click', () => {
-    currentIndex = (currentIndex +1) % cards.length;
-    showCard(currentIndex);
-});
-document.querySelector('.prev').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-    showCard(currentIndex);
+
+if (document.querySelector('.next')) {
+    document.querySelector('.next').addEventListener('click', () => {
+        currentIndex = (currentIndex +1) % cards.length;
+        showCard(currentIndex);
+    });
+}
+
+if (document.querySelector('.prev')) {
+    document.querySelector('.prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        showCard(currentIndex);
+    });
+}
+
+// principles.html
+// saving reflections function
+function saveReflection(id) {
+    const note = document.getElementById(id).value.trim();
+    localStorage.setItem(id, note);
+    alert("Your reflection has been saved to your browser's local storage.");
+}
+
+// loading the saved reflections when page opens
+document.addEventListener("DOMContentLoaded", () => {
+    const reflectionIds = [
+        "gratitude-reflection",
+        "tithing-reflection",
+        "eternal-perspective-reflection",
+    ];
+    reflectionIds.forEach(id => {
+        const savedNote = localStorage.getItem(id);
+        if (savedNote) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.value = savedNote;
+            }
+        }
+    });
 });
