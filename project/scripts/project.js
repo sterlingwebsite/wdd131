@@ -19,27 +19,30 @@ menuToggle.addEventListener('click', () => {
 });
 
 // carousel cards
-const cards = document.querySelectorAll('.card');
-let currentIndex = 0;
-function showCard(index) {
-    cards.forEach((card, i) => {
-        card.classList.toggle('active', i == index);
-    });
-}
-
-if (document.querySelector('.next')) {
-    document.querySelector('.next').addEventListener('click', () => {
-        currentIndex = (currentIndex +1) % cards.length;
-        showCard(currentIndex);
-    });
-}
-
-if (document.querySelector('.prev')) {
-    document.querySelector('.prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-        showCard(currentIndex);
-    });
-}
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const cards = carousel.querySelectorAll('.card');
+    let currentIndex = 0;
+    function showCard(index) {
+        cards.forEach((card, i) => {
+            card.classList.toggle('active', i == index);
+        });
+    }
+    const nextBtn = carousel.querySelector('.next');
+    const prevBtn = carousel.querySelector('.prev');
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            showCard(currentIndex);
+        });
+    }
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex -1 + cards.length) % cards.length;
+            showCard(currentIndex);
+        });
+    }
+    showCard(currentIndex);
+});
 
 // principles.html
 // saving reflections function
@@ -56,6 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "tithing-reflection",
         "eternal-perspective-reflection",
         "budget-wisely-reflection",
+        "eliminate-debt-reflection",
+        "build-wealth-reflection",
+        "identity-first-reflection",
+        "make-it-obvious-reflection",
+        "make-it-attractive-reflection",
+        "make-it-easy-reflection",
+        "make-it-satisfying-reflection",
+        "prosperity-as-legacy-reflection",
+        "reflection-&-application-reflection"
     ];
     reflectionIds.forEach(id => {
         const savedNote = localStorage.getItem(id);
@@ -65,5 +77,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 element.value = savedNote;
             }
         }
+    });
+});
+
+// // scroll animation
+// const sections = document.querySelectorAll("section");
+// window.addEventListener("scroll", () => {
+//     sections.forEach(sec => {
+//         const rect = sec.getBoundingClientRect();
+//         if (rect.top < window.innerHeight -100) {
+//             sec.classList.add("visible");
+//         }
+//     });
+// });
+
+// collapse/expand <h5>
+window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("h5").forEach(h5 => {
+        h5.classList.add("collapsed");
+        h5.addEventListener("click", () => {
+            h5.classList.toggle("collapsed");
+        });
     });
 });

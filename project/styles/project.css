@@ -27,6 +27,7 @@ header {
     justify-content: space-around;
     align-items: center;
     position: relative;
+    padding: 0.5rem;
     /* border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem; */
 
@@ -90,6 +91,7 @@ header nav.show a:hover {
 }
 
 /* main */
+/* index.html */
 .hero {
     /* outline: 1px solid red; */
     background-color: var(--primary-color);
@@ -198,6 +200,65 @@ header nav.show a:hover {
     flex-direction: column;
     gap: 1rem;
 
+}
+
+/* principles.html */
+.principles main > * {
+    text-align: center;
+}
+
+.principles main {
+    margin: 1rem 0;
+}
+
+.principles section {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+/* fade?
+.principles section h3 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.principles section.visible h3 {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+/* .principles section h5 {
+    margin: 1rem;
+} */
+
+.principles section h5.collapsed {
+    max-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.principles section h5::before {
+    content: " [Click to collapse] ";
+    color: red;
+}
+
+.principles section h5.collapsed::before {
+    content: " [Click to expand] ";
+    color: red;
+}
+
+.principles section h5:hover {
+    cursor: pointer;
+}
+
+.principles section .prev {
+    align-self: first baseline;
+}
+
+.principles section .next {
+    align-self: last baseline;
 }
 
 /* footer */

@@ -6,11 +6,10 @@
     <title>Principles | Prosperity with Purpose</title>
     <meta name="author" content="Sterling Steele">
     <meta name="description" content="Explore principles of faithful stewardship, smart money habits, and prosperity mindsets to build wealth with purpose.">
-
     <link rel="stylesheet" href="styles/project.css">
     <script src="scripts/project.js" defer></script>
 </head>
-<body class="principles-page">
+<body class="principles">
     <header>
         <img src="images/tree-icon-smaller.svg" alt="icon of a tree with roots">
         <h1>Prosperity with Purpose</h1>
@@ -23,200 +22,360 @@
     </header>
 
     <main>
-        <section>
-            <h2>Faithful Stewardship</h2>
-            <h3>Introduction</h3>
-            <h4>Definition of Stewardship: "All things on earth belong to the Lord; we are His stewards” (Doctrine & Covenants 104:12; see also Matthew 25:14–23).</h4>
-            <h4>Purpose: Prosperity is not ownership, but accountability. We prosper when we manage God’s gifts faithfully.</h4>
-            <h3>Gratitude</h3>
-            <h4>Doctrinal foundation: “Whoso is found a faithful steward shall enter into the joy of his Lord” (D&C 51:19).</h4>
-            <h4>Teaching: Elder Quentin L. Cook emphasized that stewardship is a sacred trust, not self‑gratification: <a href="https://www.churchofjesuschrist.org/study/general-conference/2009/10/stewardship-a-sacred-trust?lang=eng">Stewardship—a Sacred Trust</a></h4>
-            <h5>Accountability to God<br>
-            Many in the world reject responsibility, but disciples of Christ recognize that we are accountable to God for our choices.<br>
-            This accountability is described as “obedience to the unenforceable”—doing right because we love God, not because we are compelled.<br>
-            Stewardship of Self and Family<br>
-            We are stewards over our bodies, minds, families, and talents.<br>
-            Parents must prioritize spiritual nourishment alongside physical needs.<br>
-            At judgment, two key questions will concern our relationship with our spouse and our children.<br>
-            Stewardship for the Poor and Needy<br>
-            Caring for those in need is a divine commandment, with strong warnings against neglect.<br>
-            Practices like fasting and fast offerings exemplify Christlike service.<br>
-            Stories of faithful members (like an elderly widow serving despite limited means) highlight the spirit of sacrifice.<br>
-            Moral Stewardship<br>
-            Elder Cook uses the metaphor of a polluted spring to emphasize the importance of protecting virtue and chastity.<br>
-            Repentance through Christ’s Atonement restores purity, just as the spring was cleansed.<br>
-            Christlike Service<br>
-            The Church responds quietly and quickly to global needs because of members’ generosity.<br>
-            Service is modeled after Jesus Christ, who taught and exemplified love and sacrifice.</h5>
-            <h4>Application:<br>
-            Keep a gratitude journal (write 3 blessings daily).<br>
-            Express thanks in prayer for temporal and spiritual gifts.</h4>
-            <h4>Reflection prompt: How does gratitude change the way I view prosperity?</h4>
-            <div class="reflection">
-                <label for="gratitude-reflection">Your Reflection:</label>
-                <textarea id="gratitude-reflection"></textarea>
-                <button type="button" onclick="saveReflection('gratitude-reflection')">Save Reflection</button>
+        <h2 id="faith">Faithful Stewardship</h2>
+        <section class="carousel">
+            <button type="button" class="prev" aria-label="previous card">⬅️</button>
+            <div class="cards">
+                <article class="introduction card active">
+                    <h3>Introduction</h3>
+                    <h4>Definition of Stewardship: "All things on earth belong to the Lord; we are His stewards” (Doctrine & Covenants 104:12; see also Matthew 25:14–23).</h4>
+                    <h4>Purpose: Prosperity is not ownership, but accountability. We prosper when we manage God’s gifts faithfully.</h4>
+                </article>
+                <article class="gratitude card">
+                    <h3>Gratitude</h3>
+                    <h4>Doctrinal foundation: “Whoso is found a faithful steward shall enter into the joy of his Lord” (D&C 51:19).</h4>
+                    <h4>Teaching: Elder Quentin L. Cook emphasized that stewardship is a sacred trust, not self‑gratification: <a href="https://www.churchofjesuschrist.org/study/general-conference/2009/10/stewardship-a-sacred-trust?lang=eng">Stewardship—a Sacred Trust</a></h4>
+                    <h5>Accountability to God<br>
+                    Many in the world reject responsibility, but disciples of Christ recognize that we are accountable to God for our choices.<br>
+                    This accountability is described as “obedience to the unenforceable”—doing right because we love God, not because we are compelled.<br>
+                    Stewardship of Self and Family<br>
+                    We are stewards over our bodies, minds, families, and talents.<br>
+                    Parents must prioritize spiritual nourishment alongside physical needs.<br>
+                    At judgment, two key questions will concern our relationship with our spouse and our children.<br>
+                    Stewardship for the Poor and Needy<br>
+                    Caring for those in need is a divine commandment, with strong warnings against neglect.<br>
+                    Practices like fasting and fast offerings exemplify Christlike service.<br>
+                    Stories of faithful members (like an elderly widow serving despite limited means) highlight the spirit of sacrifice.<br>
+                    Moral Stewardship<br>
+                    Elder Cook uses the metaphor of a polluted spring to emphasize the importance of protecting virtue and chastity.<br>
+                    Repentance through Christ’s Atonement restores purity, just as the spring was cleansed.<br>
+                    Christlike Service<br>
+                    The Church responds quietly and quickly to global needs because of members’ generosity.<br>
+                    Service is modeled after Jesus Christ, who taught and exemplified love and sacrifice.</h5>
+                    <h4>Application:<br>
+                    Keep a gratitude journal (write 3 blessings daily).<br>
+                    Express thanks in prayer for temporal and spiritual gifts.</h4>
+                    <h4>Reflection prompt: How does gratitude change the way I view prosperity?</h4>
+                    <div class="reflection">
+                        <label for="gratitude-reflection">Your Reflection:</label>
+                        <textarea id="gratitude-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('gratitude-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="tithing card">
+                    <h3>Tithing</h3>
+                    <h4>Biblical foundation: “Bring ye all the tithes into the storehouse… and prove me now herewith” (Malachi 3:10).</h4>
+                    <h4>Teaching: Tithing is a divine law of faith and stewardship: <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/22andersen?lang=eng">Tithing: Opening the Windows of Heaven</a></h4>
+                    <h5>Faith and Trust in God<br>
+                    Tithing is not just about money—it is a matter of faith.<br>
+                    Paying tithing shows our willingness to put the Lord first, above personal interests.<br>
+                    Promises of Protection and Blessing<br>
+                    Elder Andersen shares the story of a Venezuelan family whose bakery was spared during riots, which they attributed to their faithfulness in paying tithing.<br>
+                    The Lord promises both spiritual and temporal blessings, including protection from evil.<br>
+                    Sacred Stewardship of Church Funds<br>
+                    Tithes belong to the Lord, not to Church leaders.<br>
+                    Leaders are accountable to God for their use, funding temples, missionary work, education, and humanitarian aid.<br>
+                    Global Impact of Tithing<br>
+                    Over a billion dollars in aid blessed those in need last year.<br>
+                    Tithing supports 71,000 missionaries, 177 operating temples (with many more planned), and education for 145,000 students.<br>
+                    Blessings Beyond Wealth<br>
+                    Elder Andersen recalls Elder Henry B. Eyring’s counsel that paying tithing diminishes the desire for material possessions.<br>
+                    Testimonies from faithful Saints show that tithing brings peace, sufficiency, and spiritual abundance.<br>
+                    Eternal Perspective<br>
+                    Even at life’s end, faithful Saints prioritize tithing as a way to be “right before the Lord.”<br>
+                    Tithing prepares us for eternal prosperity and participation in God’s work.</h5>
+                    <h4>Application:<br>
+                    Make tithing the first line in your budget.<br>
+                    Consider additional offerings (fast offerings, humanitarian aid).</h4>
+                    <h4>Reflection prompt: How does giving back to God shape my financial priorities?</h4>
+                    <div class="reflection">
+                        <label for="tithing-reflection">Your Reflection:</label>
+                        <textarea id="tithing-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('tithing-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="eternal-perspective card">
+                    <h3>Eternal Perspective</h3>
+                    <h4>Doctrinal foundation: “Unto whomsoever much is given, of him shall be much required” (Luke 12:48).</h4>
+                    <h4>Teaching: Elder Dale G. Renlund taught that life continues after death, and our choices have eternal consequences: <a href="https://www.churchofjesuschrist.org/study/ensign/2014/03/maintaining-an-eternal-perspective?lang=eng">Maintaining an Eternal Perspective</a></h4>
+                    <h5>Story of Mr. Brown<br>
+                    A man near death received a heart transplant and miraculously recovered.<br>
+                    Days later, he complained about cold oatmeal—forgetting the miracle he had just experienced.<br>
+                    Lesson: We often lose sight of the bigger picture when focused only on immediate discomforts.<br>
+                    Trials and Prosperity Both Test Perspective<br>
+                    Hardship can cause despair, but prosperity can lead to forgetting God.<br>
+                    Prophets like Moses, Mormon, and Brigham Young warned against losing gratitude and humility when blessed.<br>
+                    Tangible Reminders of God’s Goodness<br>
+                    Ancient Israel used physical symbols (frontlets, stones of remembrance, Ebenezer) to remember God’s miracles.<br>
+                    These reminders helped them maintain perspective and gratitude.<br>
+                    Modern Ebenezer: The Sacrament<br>
+                    For Latter-day Saints, the bread and water of the sacrament serve as tangible reminders of Christ’s atoning sacrifice.<br>
+                    Weekly renewal of covenants helps us keep an eternal perspective.<br>
+                    Role of the Holy Ghost<br>
+                    President Henry B. Eyring taught that the Holy Ghost brings God’s blessings and messages to our remembrance.<br>
+                    The Spirit helps us see God’s hand in our lives and stay focused on eternal truths.</h5>
+                    <h4>Application:<br>
+                    Align spending with eternal values (family, service, education).<br>
+                    Ask: Does this purchase bless my family or community?</h4>
+                    <h4>Reflection prompt: How can I use wealth as a tool for eternal service rather than temporary gain?</h4>
+                    <div class="reflection">
+                        <label for="eternal-perspective-reflection">Your Reflection:</label>
+                        <textarea id="eternal-perspective-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('eternal-perspective-reflection')">Save Reflection</button>
+                    </div>
+                </article>
             </div>
-            <h3>Tithing</h3>
-            <h4>Biblical foundation: “Bring ye all the tithes into the storehouse… and prove me now herewith” (Malachi 3:10).</h4>
-            <h4>Teaching: Tithing is a divine law of faith and stewardship: <a href="https://www.churchofjesuschrist.org/study/general-conference/2023/10/22andersen?lang=eng">Tithing: Opening the Windows of Heaven</a></h4>
-            <h5>Faith and Trust in God<br>
-            Tithing is not just about money—it is a matter of faith.<br>
-            Paying tithing shows our willingness to put the Lord first, above personal interests.<br>
-            Promises of Protection and Blessing<br>
-            Elder Andersen shares the story of a Venezuelan family whose bakery was spared during riots, which they attributed to their faithfulness in paying tithing.<br>
-            The Lord promises both spiritual and temporal blessings, including protection from evil.<br>
-            Sacred Stewardship of Church Funds<br>
-            Tithes belong to the Lord, not to Church leaders.<br>
-            Leaders are accountable to God for their use, funding temples, missionary work, education, and humanitarian aid.<br>
-            Global Impact of Tithing<br>
-            Over a billion dollars in aid blessed those in need last year.<br>
-            Tithing supports 71,000 missionaries, 177 operating temples (with many more planned), and education for 145,000 students.<br>
-            Blessings Beyond Wealth<br>
-            Elder Andersen recalls Elder Henry B. Eyring’s counsel that paying tithing diminishes the desire for material possessions.<br>
-            Testimonies from faithful Saints show that tithing brings peace, sufficiency, and spiritual abundance.<br>
-            Eternal Perspective<br>
-            Even at life’s end, faithful Saints prioritize tithing as a way to be “right before the Lord.”<br>
-            Tithing prepares us for eternal prosperity and participation in God’s work.</h5>
-            <h4>Application:<br>
-            Make tithing the first line in your budget.<br>
-            Consider additional offerings (fast offerings, humanitarian aid).</h4>
-            <h4>Reflection prompt: How does giving back to God shape my financial priorities?</h4>
-            <div class="reflection">
-                <label for="tithing-reflection">Your Reflection:</label>
-                <textarea id="tithing-reflection"></textarea>
-                <button type="button" onclick="saveReflection('tithing-reflection')">Save Reflection</button>
-            </div>
-            <h3>Eternal Perspective</h3>
-            <h4>Doctrinal foundation: “Unto whomsoever much is given, of him shall be much required” (Luke 12:48).</h4>
-            <h4>Teaching: Elder Dale G. Renlund taught that life continues after death, and our choices have eternal consequences: <a href="https://www.churchofjesuschrist.org/study/ensign/2014/03/maintaining-an-eternal-perspective?lang=eng">Maintaining an Eternal Perspective</a></h4>
-            <h5>Story of Mr. Brown<br>
-            A man near death received a heart transplant and miraculously recovered.<br>
-            Days later, he complained about cold oatmeal—forgetting the miracle he had just experienced.<br>
-            Lesson: We often lose sight of the bigger picture when focused only on immediate discomforts.<br>
-            Trials and Prosperity Both Test Perspective<br>
-            Hardship can cause despair, but prosperity can lead to forgetting God.<br>
-            Prophets like Moses, Mormon, and Brigham Young warned against losing gratitude and humility when blessed.<br>
-            Tangible Reminders of God’s Goodness<br>
-            Ancient Israel used physical symbols (frontlets, stones of remembrance, Ebenezer) to remember God’s miracles.<br>
-            These reminders helped them maintain perspective and gratitude.<br>
-            Modern Ebenezer: The Sacrament<br>
-            For Latter-day Saints, the bread and water of the sacrament serve as tangible reminders of Christ’s atoning sacrifice.<br>
-            Weekly renewal of covenants helps us keep an eternal perspective.<br>
-            Role of the Holy Ghost<br>
-            President Henry B. Eyring taught that the Holy Ghost brings God’s blessings and messages to our remembrance.<br>
-            The Spirit helps us see God’s hand in our lives and stay focused on eternal truths.</h5>
-            <h4>Application:<br>
-            Align spending with eternal values (family, service, education).<br>
-            Ask: Does this purchase bless my family or community?</h4>
-            <h4>Reflection prompt: How can I use wealth as a tool for eternal service rather than temporary gain?</h4>
-            <div class="reflection">
-                <label for="eternal-perspective-reflection">Your Reflection:</label>
-                <textarea id="eternal-perspective-reflection"></textarea>
-                <button type="button" onclick="saveReflection('eternal-perspective-reflection')">Save Reflection</button>
-            </div>
+            <button type="button" class="next" aria-label="next card">➡️</button>
         </section>
 
-        <section>
-            <h2>Smart Money Principles</h2>
-            <h3>Introduction</h3>
-            <h4></h4>
-            <h3>Budget Wisely</h3>
-            <h4>“A budget is telling your money where to go instead of wondering where it went.” – John C. Maxwell</h4>
-            <h4>Teaching: Create an accurate spending plan that tracks income and expenses, plugs wasteful leaks, and intentionally aligns money choices with personal goals and values. Page 11 of: <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a></h4>
-            <h5>Spending Plan = Budget<br>
-            Page 12: A budget is framed as a spending plan—a tool to take control of your financial future and align money with your goals.<br>
-            Four Steps to Create a Spending Plan - Pages 12 - 14<br>
-            Identify your income – Use pay stubs, savings, and investment statements to calculate accurate monthly income.<br>
-            List your expenses – Track both fixed (rent, insurance) and variable (food, entertainment) costs.<br>
-            Compare income and expenses – See if you have a surplus or deficit.<br>
-            Set priorities and make changes – Cut back on leaks, increase income, or rebalance spending.<br>
-            Accuracy Matters<br>
-            Page 12: Don’t forget irregular bills (like car insurance every six months). Break them down into monthly amounts so your plan reflects reality.<br>
-            Mindful Spending<br>
-            Page 11: The guide encourages asking intentional questions before purchases: Why am I buying this? Is there a cheaper alternative? Does this align with my goals?<br>
-            Waste Awareness<br>
-            Pages 11 - 12: The average family wastes about 30% of income through unexamined spending habits. A budget helps reclaim that “lost” money—like giving yourself a 30% raise.<br>
-            Tools & Resources - Pages 11 - 12<br>
-            Worksheets for mindful spending and debt recovery<br>
-            Online tools like the Budget Wizard at Smart About Money (referenced in the text)</h5>
-            <h4>Application:<br>
-            Build your spending plan<br>
-            Handle irregular bills<br>
-            Practice Mindful Spending<br>
-            Reclaim the lost 30%<br>
-            Use tools and resources</h4>
-            <h4>Reflection prompt: Think about your last three purchases. For each one, ask yourself: Did this expense align with my goals and values, or was it more of a leak in my spending plan? If it was a leak, how could I redirect that money toward something purposeful next time?</h4>
-            <div class="reflection">
-                <label for="budget-wisely-reflection">Your Reflection:</label>
-                <textarea id="budget-wisely-reflection"></textarea>
-                <button type="button" onclick="saveReflection('budget-wisely-reflection')">Save Reflection</button>
+        <h2>Smart Money Principles</h2>
+        <section class="carousel" id="finance">
+            <button type="button" class="prev" aria-label="previous card">⬅️</button>
+            <div class="cards">
+                <article class="introduction card active">
+                    <h3>Introduction</h3>
+                    <h4>Smart money isn’t about restriction—it’s about freedom. When you budget wisely, eliminate debt, and build wealth with purpose, you reclaim control over your future and create a legacy that blesses your family. This course will give you practical tools and timeless principles to turn every dollar into a step toward security, confidence, and lasting impact.</h4>
+                </article>
+                <article class="budget-wisely card">
+                    <h3>Budget Wisely</h3>
+                    <h4>“A budget is telling your money where to go instead of wondering where it went.” – John C. Maxwell</h4>
+                    <h4>Teaching: Create an accurate spending plan that tracks income and expenses, plugs wasteful leaks, and intentionally aligns money choices with personal goals and values. Page 11 of: <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a></h4>
+                    <h5>Spending Plan = Budget<br>
+                    Page 12: A budget is framed as a spending plan—a tool to take control of your financial future and align money with your goals.<br>
+                    Four Steps to Create a Spending Plan - Pages 12 - 14<br>
+                    Identify your income – Use pay stubs, savings, and investment statements to calculate accurate monthly income.<br>
+                    List your expenses – Track both fixed (rent, insurance) and variable (food, entertainment) costs.<br>
+                    Compare income and expenses – See if you have a surplus or deficit.<br>
+                    Set priorities and make changes – Cut back on leaks, increase income, or rebalance spending.<br>
+                    Accuracy Matters<br>
+                    Page 12: Don’t forget irregular bills (like car insurance every six months). Break them down into monthly amounts so your plan reflects reality.<br>
+                    Mindful Spending<br>
+                    Page 11: The guide encourages asking intentional questions before purchases: Why am I buying this? Is there a cheaper alternative? Does this align with my goals?<br>
+                    Waste Awareness<br>
+                    Pages 11 - 12: The average family wastes about 30% of income through unexamined spending habits. A budget helps reclaim that “lost” money—like giving yourself a 30% raise.<br>
+                    Tools & Resources - Pages 11 - 12<br>
+                    Worksheets for mindful spending and debt recovery<br>
+                    Online tools like the Budget Wizard at Smart About Money (referenced in the text)</h5>
+                    <h4>Application:<br>
+                    Build your spending plan<br>
+                    Handle irregular bills<br>
+                    Practice Mindful Spending<br>
+                    Reclaim the lost 30%<br>
+                    Use tools and resources</h4>
+                    <h4>Reflection prompt: Think about your last three purchases. For each one, ask yourself: Did this expense align with my goals and values, or was it more of a leak in my spending plan? If it was a leak, how could I redirect that money toward something purposeful next time?</h4>
+                    <div class="reflection">
+                        <label for="budget-wisely-reflection">Your Reflection:</label>
+                        <textarea id="budget-wisely-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('budget-wisely-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="eliminate-debt card">
+                    <h3>Eliminate Debt</h3>
+                    <h4>“Debt is like any other trap, easy enough to get into, but hard enough to get out.” – Henry Wheeler Shaw</h4>
+                    <h4>Teaching: Eliminating debt is a step‑by‑step process of creating a repayment plan, cutting expenses, increasing income, and prioritizing high‑interest balances while avoiding new debt. Page 15 of: <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a></h4>
+                    <h5>
+                        Act quickly: Don’t wait to act, because debts compound over time. (p. 22)<br>
+                        Create a debt recovery plan: Use a worksheet to organize debts by interest rate and prioritize repayment. (pp. 22–24)<br>
+                        Snowball method: When one debt is paid off, continue making the same payment amount toward the next debt. (p. 22)<br>
+                        Cut expenses: Identify areas to reduce spending and free up money for debt repayment. (p. 22)<br>
+                        Sell unused items: Generate extra cash by selling rarely used possessions. (p. 22)<br>
+                        Increase income: Consider overtime, a second job, or freelance work to accelerate repayment. (p. 22)<br>
+                        Consolidate loans: Shift higher-interest debts into a single lower-rate loan. (p. 22)<br>
+                        Limit credit card use: Keep only one or two major cards and stop adding new debt. (p. 22–23)<br>
+                        Seek help if needed: Contact creditors directly, work with nonprofit credit counseling agencies, and avoid “credit repair” scams. (pp. 23–24)<br>
+                        Bankruptcy as last resort: Chapter 7 and Chapter 13 are explained, but both have long-term consequences. (p. 25)
+                    </h5>
+                    <h4>Application:<br>
+                    Create a debt inventory worksheet with balances and interest rates.<br>
+                    Pick a repayment strategy (snowball or avalanche) and set a realistic monthly target.<br>
+                    Identify two expenses to cut immediately and redirect that money toward debt repayment.</h4>
+                    <h4>Reflection prompt: Think about your current relationship with debt. How does the idea that debt is a trap—easy to enter but hard to escape—resonate with your own experiences? As you consider strategies like cutting expenses, increasing income, or using the snowball method, which step feels most realistic for you to begin with today, and why? What obstacles might you face, and how could you prepare to overcome them?</h4>
+                    <div class="reflection">
+                        <label for="eliminate-debt-reflection">Your Reflection:</label>
+                        <textarea id="eliminate-debt-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('eliminate-debt-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="build-wealth card">
+                    <h3>Build Wealth to Bless Your Family</h3>
+                    <h4>"The greatest legacy we can leave our children is happy memories and financial freedom." — Andy Hill</h4>
+                    <h4>Teaching: Money is a means to secure housing, health, education, and a future for your family. Wealth is a tool to bless, protect, and empower those you love. <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a></h4>
+                    <h5>
+                        New Agreements with Money (p. 6): The article encourages commitments like:<br>
+                        “I will use my money so my family and I can live in decent housing in a safe neighborhood.”<br>
+                        “I will use my money to promote the physical health and emotional well-being of my family and myself.”<br>
+                        “I will use my money to help further the educational and personal growth of my family and myself.”<br>
+                        “I will use my money to provide for a secure future.” These agreements frame wealth as a tool to bless family life, not just accumulate possessions.<br>
+                        Grow Your Savings (p. 26):<br>
+                        Saving is described as an act of faith in your future. Even small amounts, when compounded, grow into meaningful wealth that can support family goals.<br>
+                        Set Financial Goals (p. 35): Families are encouraged to define goals—like education, housing, or retirement—and align saving habits to achieve them.<br>
+                        Save for Emergencies (p. 40): Establishing an emergency fund is highlighted as a way to protect loved ones from unexpected hardships.<br>
+                        Tax-Advantaged Accounts (pp. 41–44): Retirement and education accounts are presented as tools to build wealth that directly blesses family members in the long term.<br>
+                        Insurance and Safeguards (p. 49):<br>
+                        Using insurance to protect yourself, your assets, and your loved ones ensures that wealth serves as a shield for family stability.<br>
+                        Financial Fraud Awareness (p. 46):<br>
+                        Protecting savings from fraud is part of safeguarding family blessings.
+                    </h5>
+                    <h4>
+                        Application:<br>
+                        Use money to bless family life<br>
+                        Build faith in the future<br>
+                        Define and align family goals<br>
+                        Use tax-advantaged accounts<br>
+                        Safeguard your blessings<br>
+                        Use daily agreements with money
+                    </h4>
+                    <h4>Reflection prompt: In what ways am I currently using money as a tool to bless, protect, and empower my family? Where do my spending, saving, and safeguarding habits align with my values—and where might I need to make new agreements with money to better secure housing, health, education, and a future for those I love?</h4>
+                    <div class="reflection">
+                        <label for="build-wealth-reflection">Your Reflection:</label>
+                        <textarea id="build-wealth-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('build-wealth-reflection')">Save Reflection</button>
+                    </div>
+                </article>
             </div>
-            <h3>Eliminate Debt</h3>
-            <h4>“Debt is like any other trap, easy enough to get into, but hard enough to get out.” – Henry Wheeler Shaw</h4>
-            <h4>Teaching: Eliminating debt is a step‑by‑step process of creating a repayment plan, cutting expenses, increasing income, and prioritizing high‑interest balances while avoiding new debt. Page 15 of: <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a></h4>
-            <h5>
-                Act quickly: Don’t wait to act, because debts compound over time. (p. 22)<br>
-                Create a debt recovery plan: Use a worksheet to organize debts by interest rate and prioritize repayment. (pp. 22–24)<br>
-                Snowball method: When one debt is paid off, continue making the same payment amount toward the next debt. (p. 22)<br>
-                Cut expenses: Identify areas to reduce spending and free up money for debt repayment. (p. 22)<br>
-                Sell unused items: Generate extra cash by selling rarely used possessions. (p. 22)<br>
-                Increase income: Consider overtime, a second job, or freelance work to accelerate repayment. (p. 22)<br>
-                Consolidate loans: Shift higher-interest debts into a single lower-rate loan. (p. 22)<br>
-                Limit credit card use: Keep only one or two major cards and stop adding new debt. (p. 22–23)<br>
-                Seek help if needed: Contact creditors directly, work with nonprofit credit counseling agencies, and avoid “credit repair” scams. (pp. 23–24)<br>
-                Bankruptcy as last resort: Chapter 7 and Chapter 13 are explained, but both have long-term consequences. (p. 25)
-            </h5>
-            <h4>Application:<br>
-            Create a debt inventory worksheet with balances and interest rates.<br>
-            Pick a repayment strategy (snowball or avalanche) and set a realistic monthly target.<br>
-            Identify two expenses to cut immediately and redirect that money toward debt repayment.</h4>
-            <h4>Reflection prompt: Think about your current relationship with debt. How does the idea that debt is a trap—easy to enter but hard to escape—resonate with your own experiences? As you consider strategies like cutting expenses, increasing income, or using the snowball method, which step feels most realistic for you to begin with today, and why? What obstacles might you face, and how could you prepare to overcome them?</h4>
-            <div class="reflection">
-                <label for="tithing-reflection">Your Reflection:</label>
-                <textarea id="tithing-reflection"></textarea>
-                <button type="button" onclick="saveReflection('tithing-reflection')">Save Reflection</button>
-            </div>
-            <h3>Build Wealth to Bless Your Family</h3>
-            <h4>"The greatest legacy we can leave our children is happy memories and financial freedom." — Andy Hill</h4>
-            <h4>Teaching: Money is a means to secure housing, health, education, and a future for your family. Wealth is a tool to bless, protect, and empower those you love. <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a></h4>
-            <h5>
-                New Agreements with Money (p. 6): The article encourages commitments like:<br>
-                “I will use my money so my family and I can live in decent housing in a safe neighborhood.”<br>
-                “I will use my money to promote the physical health and emotional well-being of my family and myself.”<br>
-                “I will use my money to help further the educational and personal growth of my family and myself.”<br>
-                “I will use my money to provide for a secure future.” These agreements frame wealth as a tool to bless family life, not just accumulate possessions.<br>
-                Grow Your Savings (p. 26):<br>
-                Saving is described as an act of faith in your future. Even small amounts, when compounded, grow into meaningful wealth that can support family goals.<br>
-                Set Financial Goals (p. 35): Families are encouraged to define goals—like education, housing, or retirement—and align saving habits to achieve them.<br>
-                Save for Emergencies (p. 40): Establishing an emergency fund is highlighted as a way to protect loved ones from unexpected hardships.<br>
-                Tax-Advantaged Accounts (pp. 41–44): Retirement and education accounts are presented as tools to build wealth that directly blesses family members in the long term.<br>
-                Insurance and Safeguards (p. 49):<br>
-                Using insurance to protect yourself, your assets, and your loved ones ensures that wealth serves as a shield for family stability.<br>
-                Financial Fraud Awareness (p. 46):<br>
-                Protecting savings from fraud is part of safeguarding family blessings.
-            </h5>
-            <h4>
-                Application:<br>
-                Use money to bless family life<br>
-                Build faith in the future<br>
-                Define and align family goals<br>
-                Use tax-advantaged accounts<br>
-                Safeguard your blessings<br>
-                Use daily agreements with money
-            </h4>
-            <h4>Reflection prompt: In what ways am I currently using money as a tool to bless, protect, and empower my family? Where do my spending, saving, and safeguarding habits align with my values—and where might I need to make new agreements with money to better secure housing, health, education, and a future for those I love?</h4>
-            <div class="reflection">
-                <label for="eternal-perspective-reflection">Your Reflection:</label>
-                <textarea id="eternal-perspective-reflection"></textarea>
-                <button type="button" onclick="saveReflection('eternal-perspective-reflection')">Save Reflection</button>
-            </div>
+            <button type="button" class="next" aria-label="next card">➡️</button>
         </section>
 
-        <section>
-            <h2>Habits of Prosperity</h2>
-            <!-- Should break this down. Need to make a lesson out of it. -->
-            <h3>Daily disciplines and mindset shifts that align your life with purpose.</h3>
+        <h2>Habits of Prosperity</h2>
+        <section class="carousel" id="habits">
+            <button type="button" class="prev" aria-label="previous card">⬅️</button>
+            <div class="cards">
+                <article class="introduction card active">
+                    <h3>Introduction</h3>
+                    <h4>Why Habits Matter</h4>
+                    <h4>Daily disciplines and mindset shifts that align your life with purpose, based on James Clear's book: Atomic Habits</h4>
+                    <h4>
+                        Habits are the compound interest of self-improvement.<br>
+                        Prosperity isn’t just financial — it’s holistic: faith, family, health, and legacy.<br>
+                        Frame habits as small, consistent actions that build a purposeful life.
+                    </h4>
+                </article>
+                <article class="identity-first card">
+                    <h4>Lesson 1: Identity First</h4>
+                    <h5>
+                        Core Idea: Every action is a vote for the type of person you want to become.<br>
+                        Prosperity Connection: Prosperity flows from identity — “I am a wise steward,” “I am a giver,” “I am disciplined.”<br>
+                        Reflection Prompt: What identity do I want my habits to reinforce?<br>
+                        Action Step: Write one “I am” statement that connects prosperity to your values.
+                    </h5>
+                    <div class="reflection">
+                        <label for="identity-first-reflection">Your Reflection:</label>
+                        <textarea id="identity-first-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('identity-first-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="make-it-obvious card">
+                    <h4>Lesson 2: Make It Obvious</h4>
+                    <h5>
+                        Core Idea: Habits start with cues.<br>
+                        Prosperity Connection: Place visible reminders where they matter — budget tracker on the fridge, gratitude journal on your nightstand.<br>
+                        Reflection Prompt: What visual cue could remind me to act in alignment with my purpose?<br>
+                        Action Step: Create one physical or digital cue for a prosperity habit.
+                    </h5>
+                    <div class="reflection">
+                        <label for="make-it-obvious-reflection">Your Reflection:</label>
+                        <textarea id="make-it-obvious-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('make-it-obvious-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="make-it-attractive card">
+                    <h4>Lesson 3: Make It Attractive</h4>
+                    <h5>
+                        Core Idea: Pair habits with something enjoyable.<br>
+                        Prosperity Connection: Saving becomes joyful when tied to family goals; prayer feels uplifting with music.<br>
+                        Reflection Prompt: How can I make my prosperity habits something I look forward to?<br>
+                        Action Step: Pair one discipline (saving, journaling, exercise) with something you enjoy.
+                    </h5>
+                    <div class="reflection">
+                        <label for="make-it-attractive-reflection">Your Reflection:</label>
+                        <textarea id="make-it-attractive-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('make-it-attractive-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="make-it-easy card">
+                    <h4>Lesson 4: Make It Easy</h4>
+                    <h5>
+                        Core Idea: Reduce friction, increase simplicity.<br>
+                        Prosperity Connection: Automate savings, prep meals, set reminders. Prosperity thrives on systems, not willpower.<br>
+                        Reflection Prompt: What friction is keeping me from living with purpose?<br>
+                        Action Step: Remove one barrier today (e.g., set up auto-transfer, lay out workout clothes).
+                    </h5>
+                    <div class="reflection">
+                        <label for="make-it-easy-reflection">Your Reflection:</label>
+                        <textarea id="make-it-easy-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('make-it-easy-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="make-it-satisfying card">
+                    <h4>Lesson 5: Make It Satisfying</h4>
+                    <h5>
+                        Core Idea: Immediate rewards reinforce long-term habits.<br>
+                        Prosperity Connection: Celebrate milestones, track progress visually, reflect on blessings.<br>
+                        Reflection Prompt: How can I make my prosperity habits rewarding right now?<br>
+                        Action Step: Create a simple reward system (checklist, tracker, or family celebration).
+                    </h5>
+                    <div class="reflection">
+                        <label for="make-it-satisfying-reflection">Your Reflection:</label>
+                        <textarea id="make-it-satisfying-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('make-it-satisfying-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="prosperity-as-legacy card">
+                    <h4>Prosperity as Legacy</h4>
+                    <h5>
+                        Core Idea: Habits compound into identity, identity compounds into legacy.<br>
+                        Prosperity Connection: Prosperity isn’t accumulation — it’s blessing future generations.<br>
+                        Reflection Prompt: What habit today will ripple into my family’s future?<br>
+                        Action Step: Choose one prosperity habit to practice daily for the next week.
+                    </h5>
+                    <div class="reflection">
+                        <label for="prosperity-as-legacy-reflection">Your Reflection:</label>
+                        <textarea id="prosperity-as-legacy-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('prosperity-as-legacy-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="daily-disciplines card">
+                    <h4>Daily Disciplines for Prosperity</h4>
+                    <h5>
+                        Morning reflection: 5 minutes of gratitude + purpose statement<br>
+                        Financial micro-habit: save $1/day or review one expense<br>
+                        Family connection: one intentional act of service daily<br>
+                        Health habit: short walk or stretch after meals<br>
+                        Evening reflection: note one “vote” you cast for your identity today
+                    </h5>
+                </article>
+                <article class="mindset-shifts card">
+                    <h4>Mindset Shifts</h4>
+                    <h5>
+                        From outcome-based (“I want wealth”) → to identity-based (“I am a wise steward”).<br>
+                        From big leaps → to small wins compound over time.<br>
+                        From discipline as restriction → to discipline as freedom and alignment with purpose.
+                    </h5>
+                </article>
+                <article class="reflection-&-application card">
+                    <h4>Reflection & Application</h4>
+                    <h5>
+                        Prompts:<br>
+                        “What identity am I casting votes for today?”<br>
+                        “Which habit aligns most with my family-centered values?”<br>
+                        “What small win today reflects prosperity with purpose?”<br>
+                        Encourage journaling or localStorage reflection features (perfect for your site)
+                    </h5>
+                    <div class="reflection">
+                        <label for="reflection-&-application-reflection">Your Reflection:</label>
+                        <textarea id="reflection-&-application-reflection"></textarea>
+                        <button type="button" onclick="saveReflection('reflection-&-application-reflection')">Save Reflection</button>
+                    </div>
+                </article>
+                <article class="closing card">
+                    <h4>Closing</h4>
+                    <h5>
+                        Habits aren’t just about personal gain — they ripple into family, community, and future generations.<br>
+                        Prosperity = purpose + discipline + consistency.
+                    </h5>
+                </article>
+            </div>
+            <button type="button" class="next" aria-label="next card">➡️</button>
         </section>
     </main>
 
