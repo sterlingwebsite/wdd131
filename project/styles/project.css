@@ -268,7 +268,7 @@ header nav.show a:hover {
 }
 
 .principles section .collapsible h5 {
-    padding: 1.2rem 0;
+    padding: 0.3rem 0;
 }
 
 .principles section h3 {
@@ -332,6 +332,12 @@ header nav.show a:hover {
 
 .principles section .call-to-action {
     padding: 1rem;
+}
+
+.principles section .cards .card .collapsible {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* footer */
