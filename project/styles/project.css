@@ -133,6 +133,7 @@ header nav.show a:hover {
     text-decoration: none;
     border: 5px solid var(--secondary-color);
     text-align: center;
+    background-color: var(--primary-color);
 }
 
 .call-to-action:hover {
@@ -329,6 +330,10 @@ header nav.show a:hover {
     padding-top: 0;
 }
 
+.principles section .call-to-action {
+    padding: 1rem;
+}
+
 /* footer */
 footer {
     background: var(--primary-color);
@@ -357,7 +362,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 820px) {
     .card {
         display: flex;
         flex-direction: column;
