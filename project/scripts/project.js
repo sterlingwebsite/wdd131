@@ -33,6 +33,10 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         nextBtn.addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % cards.length;
             showCard(currentIndex);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     }
     if (prevBtn) {
