@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Money Principles | Prosperity with Purpose</title>
+    <meta name="author" content="Sterling Steele">
+    <meta name="description" content="Explore principles of faithful stewardship, smart money habits, and prosperity mindsets to build wealth with purpose.">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body class="principles">
+    <header>
+        <img src="images/tree-icon-smaller.svg" alt="icon of a tree with roots">
+        <h1>Prosperity with Purpose</h1>
+        <button id="hamburger" type="button" aria-label="false">☰</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="faithful-stewardship.html">Journey</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="smart-money-principles">
+            <h2>Smart Money Principles</h2>
+            <section class="carousel">
+                <button type="button" class="prev" aria-label="previous card">⬅️</button>
+                <div class="cards">
+                    <article class="introduction card active">
+                        <h3>Introduction</h3>
+                        <p>Smart money isn’t about restriction—it’s about freedom. When you budget wisely, eliminate debt, and build wealth with purpose, you reclaim control over your future and create a legacy that blesses your family. This course will give you practical tools and timeless principles to turn every dollar into a step toward security, confidence, and lasting impact.</p>
+                    </article>
+                    <article class="budget-wisely card">
+                        <h3>Budget Wisely</h3>
+                        <p>“A budget is telling your money where to go instead of wondering where it went.” – John C. Maxwell</p>
+                        <h4>Teaching</h4>
+                        <p>Create an accurate spending plan that tracks income and expenses, plugs wasteful leaks, and intentionally aligns money choices with personal goals and values. Page 11 of:</p>
+                        <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a>
+                        <div class="collapsible">
+                            <h5>Spending Plan = Budget</h5>
+                            <p>Page 12: A budget is framed as a spending plan—a tool to take control of your financial future and align money with your goals.</p>
+                            <h5>Four Steps to Create a Spending Plan - Pages 12 - 14</h5>
+                            <p>Identify your income – Use pay stubs, savings, and investment statements to calculate accurate monthly income.</p>
+                            <p>List your expenses – Track both fixed (rent, insurance) and variable (food, entertainment) costs.</p>
+                            <p>Compare income and expenses – See if you have a surplus or deficit.</p>
+                            <p>Set priorities and make changes – Cut back on leaks, increase income, or rebalance spending.</p>
+                            <h5>Accuracy Matters</h5>
+                            <p>Page 12: Don’t forget irregular bills (like car insurance every six months). Break them down into monthly amounts so your plan reflects reality.</p>
+                            <h5>Mindful Spending</h5>
+                            <p>Page 11: The guide encourages asking intentional questions before purchases: Why am I buying this? Is there a cheaper alternative? Does this align with my goals?</p>
+                            <h5>Waste Awareness</h5>
+                            <p>Pages 11 - 12: The average family wastes about 30% of income through unexamined spending habits. A budget helps reclaim that “lost” money—like giving yourself a 30% raise.</p>
+                            <h5>Tools & Resources - Pages 11 - 12</h5>
+                            <p>Worksheets for mindful spending and debt recovery</p>
+                            <p>Online tools like the Budget Wizard at Smart About Money (referenced in the text)</p>
+                        </div>
+                        <h4>Application</h4>
+                        <p>Build your spending plan</p>
+                        <p>Handle irregular bills</p>
+                        <p>Practice Mindful Spending</p>
+                        <p>Reclaim the lost 30%</p>
+                        <p>Use tools and resources</p>
+                        <h4>Reflection prompt</h4>
+                        <p>Think about your last three purchases. For each one, ask yourself: Did this expense align with my goals and values, or was it more of a leak in my spending plan? If it was a leak, how could I redirect that money toward something purposeful next time?</p>
+                        <div class="reflection">
+                            <label for="budget-wisely-reflection">Your Reflection:</label>
+                            <textarea id="budget-wisely-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('budget-wisely-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="eliminate-debt card">
+                        <h3>Eliminate Debt</h3>
+                        <p>“Debt is like any other trap, easy enough to get into, but hard enough to get out.” – Henry Wheeler Shaw</p>
+                        <h4>Teaching</h4>
+                        <p>Eliminating debt is a step‑by‑step process of creating a repayment plan, cutting expenses, increasing income, and prioritizing high‑interest balances while avoiding new debt. Page 15 of:</p>
+                        <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a>
+                        <div class="collapsible">
+                            <h5>Act quickly</h5>
+                            <p>Don’t wait to act, because debts compound over time. (p. 22)</p>
+                            <h5>Create a debt recovery plan</h5>
+                            <p>Use a worksheet to organize debts by interest rate and prioritize repayment. (pp. 22–24)</p>
+                            <h5>Snowball method</h5>
+                                <p>When one debt is paid off, continue making the same payment amount toward the next debt. (p. 22)</p>
+                            <h5>Cut expenses</h5>
+                                <p>Identify areas to reduce spending and free up money for debt repayment. (p. 22)</p>
+                            <h5>Sell unused items</h5>
+                                <p>Generate extra cash by selling rarely used possessions. (p. 22)</p>
+                            <h5>Increase income</h5>
+                                <p>Consider overtime, a second job, or freelance work to accelerate repayment. (p. 22)</p>
+                            <h5>Consolidate loans</h5>
+                                <p>Shift higher-interest debts into a single lower-rate loan. (p. 22)</p>
+                            <h5>Limit credit card use</h5>
+                                <p>Keep only one or two major cards and stop adding new debt. (p. 22–23)</p>
+                            <h5>Seek help if needed</h5>
+                                <p>Contact creditors directly, work with nonprofit credit counseling agencies, and avoid “credit repair” scams. (pp. 23–24)</p>
+                            <h5>Bankruptcy as last resort</h5>
+                                <p>Chapter 7 and Chapter 13 are explained, but both have long-term consequences. (p. 25)</p>
+                        </div>
+                        <h4>Application</h4>
+                        <p>Create a debt inventory worksheet with balances and interest rates.</p>
+                        <p>Pick a repayment strategy (snowball or avalanche) and set a realistic monthly target.</p>
+                        <p>Identify two expenses to cut immediately and redirect that money toward debt repayment.</p>
+                        <h4>Reflection prompt</h4>
+                        <p>Think about your current relationship with debt. How does the idea that debt is a trap—easy to enter but hard to escape—resonate with your own experiences? As you consider strategies like cutting expenses, increasing income, or using the snowball method, which step feels most realistic for you to begin with today, and why? What obstacles might you face, and how could you prepare to overcome them?</p>
+                        <div class="reflection">
+                            <label for="eliminate-debt-reflection">Your Reflection:</label>
+                            <textarea id="eliminate-debt-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('eliminate-debt-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="build-wealth card">
+                        <h3>Build Wealth to Bless Your Family</h3>
+                        <p>"The greatest legacy we can leave our children is happy memories and financial freedom." — Andy Hill</p>
+                        <h4>Teaching</h4>
+                        <p>Money is a means to secure housing, health, education, and a future for your family. Wealth is a tool to bless, protect, and empower those you love.</p>
+                        <a href="https://www.nefe.org/initiatives/Your-Spending-Your-Savings-Your-Future.pdf">Your Spending Your Savings Your Future</a>
+                        <div class="collapsible">
+                            <h5>New Agreements with Money (p. 6)</h5>
+                            <h5 class="second-heading">The article encourages commitments like:</h5>
+                            <p>“I will use my money so my family and I can live in decent housing in a safe neighborhood.”</p>
+                            <p>“I will use my money to promote the physical health and emotional well-being of my family and myself.”</p>
+                            <p>“I will use my money to help further the educational and personal growth of my family and myself.”</p>
+                            <p>“I will use my money to provide for a secure future.” These agreements frame wealth as a tool to bless family life, not just accumulate possessions.</p>
+                            <h5>Grow Your Savings (p. 26)</h5>
+                            <p>Saving is described as an act of faith in your future. Even small amounts, when compounded, grow into meaningful wealth that can support family goals.</p>
+                            <h5>Set Financial Goals (p. 35)</h5>
+                            <p>Families are encouraged to define goals—like education, housing, or retirement—and align saving habits to achieve them.</p>
+                            <h5>Save for Emergencies (p. 40)</h5>
+                            <p>Establishing an emergency fund is highlighted as a way to protect loved ones from unexpected hardships.</p>
+                            <h5>Tax-Advantaged Accounts (pp. 41–44)</h5>
+                            <p>Retirement and education accounts are presented as tools to build wealth that directly blesses family members in the long term.</p>
+                            <h5>Insurance and Safeguards (p. 49)</h5>
+                            <p>Using insurance to protect yourself, your assets, and your loved ones ensures that wealth serves as a shield for family stability.</p>
+                            <h5>Financial Fraud Awareness (p. 46)</h5>
+                            <p>Protecting savings from fraud is part of safeguarding family blessings.</p>
+                        </div>
+                        <h4>Application</h4>
+                        <p>Use money to bless family life</p>
+                        <p>Build faith in the future</p>
+                        <p>Define and align family goals</p>
+                        <p>Use tax-advantaged accounts</p>
+                        <p>Safeguard your blessings</p>
+                        <p>Use daily agreements with money</p>
+                        <h4>Reflection prompt</h4>
+                        <p>In what ways am I currently using money as a tool to bless, protect, and empower my family? Where do my spending, saving, and safeguarding habits align with my values—and where might I need to make new agreements with money to better secure housing, health, education, and a future for those I love?</p>
+                        <div class="reflection">
+                            <label for="build-wealth-reflection">Your Reflection:</label>
+                            <textarea id="build-wealth-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('build-wealth-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                </div>
+                <button type="button" class="next" aria-label="next card">➡️</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💷 Sterling Steele 💷 Utah</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

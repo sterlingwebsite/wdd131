@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // collapse/expand <h5>
 window.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("h5").forEach(h5 => {
-        h5.classList.add("collapsed");
-        h5.addEventListener("click", () => {
-            h5.classList.toggle("collapsed");
+    document.querySelectorAll(".collapsible").forEach(element => {
+        element.classList.add("collapsed");
+        element.addEventListener("click", () => {
+            element.classList.toggle("collapsed");
         });
     });
 });

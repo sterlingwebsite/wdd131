@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habits of Prosperity | Prosperity with Purpose</title>
+    <meta name="author" content="Sterling Steele">
+    <meta name="description" content="Explore principles of faithful stewardship, smart money habits, and prosperity mindsets to build wealth with purpose.">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body class="principles">
+    <header>
+        <img src="images/tree-icon-smaller.svg" alt="icon of a tree with roots">
+        <h1>Prosperity with Purpose</h1>
+        <button id="hamburger" type="button" aria-label="false">☰</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="faithful-stewardship.html">Journey</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="habits-of-prosperity">
+            <h2>Habits of Prosperity</h2>
+            <section class="carousel">
+                <button type="button" class="prev" aria-label="previous card">⬅️</button>
+                <div class="cards">
+                    <article class="introduction card active">
+                        <h3>Introduction</h3>
+                        <h4>Why Habits Matter</h4>
+                        <h4>Daily disciplines and mindset shifts that align your life with purpose, based on James Clear's book: Atomic Habits</h4>
+                        <h4>
+                            Habits are the compound interest of self-improvement.<br>
+                            Prosperity isn’t just financial — it’s holistic: faith, family, health, and legacy.<br>
+                            Frame habits as small, consistent actions that build a purposeful life.
+                        </h4>
+                    </article>
+                    <article class="identity-first card">
+                        <h4>Lesson 1: Identity First</h4>
+                        <h5>
+                            Core Idea: Every action is a vote for the type of person you want to become.<br>
+                            Prosperity Connection: Prosperity flows from identity — “I am a wise steward,” “I am a giver,” “I am disciplined.”<br>
+                            Reflection Prompt: What identity do I want my habits to reinforce?<br>
+                            Action Step: Write one “I am” statement that connects prosperity to your values.
+                        </h5>
+                        <div class="reflection">
+                            <label for="identity-first-reflection">Your Reflection:</label>
+                            <textarea id="identity-first-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('identity-first-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="make-it-obvious card">
+                        <h4>Lesson 2: Make It Obvious</h4>
+                        <h5>
+                            Core Idea: Habits start with cues.<br>
+                            Prosperity Connection: Place visible reminders where they matter — budget tracker on the fridge, gratitude journal on your nightstand.<br>
+                            Reflection Prompt: What visual cue could remind me to act in alignment with my purpose?<br>
+                            Action Step: Create one physical or digital cue for a prosperity habit.
+                        </h5>
+                        <div class="reflection">
+                            <label for="make-it-obvious-reflection">Your Reflection:</label>
+                            <textarea id="make-it-obvious-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('make-it-obvious-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="make-it-attractive card">
+                        <h4>Lesson 3: Make It Attractive</h4>
+                        <h5>
+                            Core Idea: Pair habits with something enjoyable.<br>
+                            Prosperity Connection: Saving becomes joyful when tied to family goals; prayer feels uplifting with music.<br>
+                            Reflection Prompt: How can I make my prosperity habits something I look forward to?<br>
+                            Action Step: Pair one discipline (saving, journaling, exercise) with something you enjoy.
+                        </h5>
+                        <div class="reflection">
+                            <label for="make-it-attractive-reflection">Your Reflection:</label>
+                            <textarea id="make-it-attractive-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('make-it-attractive-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="make-it-easy card">
+                        <h4>Lesson 4: Make It Easy</h4>
+                        <h5>
+                            Core Idea: Reduce friction, increase simplicity.<br>
+                            Prosperity Connection: Automate savings, prep meals, set reminders. Prosperity thrives on systems, not willpower.<br>
+                            Reflection Prompt: What friction is keeping me from living with purpose?<br>
+                            Action Step: Remove one barrier today (e.g., set up auto-transfer, lay out workout clothes).
+                        </h5>
+                        <div class="reflection">
+                            <label for="make-it-easy-reflection">Your Reflection:</label>
+                            <textarea id="make-it-easy-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('make-it-easy-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="make-it-satisfying card">
+                        <h4>Lesson 5: Make It Satisfying</h4>
+                        <h5>
+                            Core Idea: Immediate rewards reinforce long-term habits.<br>
+                            Prosperity Connection: Celebrate milestones, track progress visually, reflect on blessings.<br>
+                            Reflection Prompt: How can I make my prosperity habits rewarding right now?<br>
+                            Action Step: Create a simple reward system (checklist, tracker, or family celebration).
+                        </h5>
+                        <div class="reflection">
+                            <label for="make-it-satisfying-reflection">Your Reflection:</label>
+                            <textarea id="make-it-satisfying-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('make-it-satisfying-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="prosperity-as-legacy card">
+                        <h4>Prosperity as Legacy</h4>
+                        <h5>
+                            Core Idea: Habits compound into identity, identity compounds into legacy.<br>
+                            Prosperity Connection: Prosperity isn’t accumulation — it’s blessing future generations.<br>
+                            Reflection Prompt: What habit today will ripple into my family’s future?<br>
+                            Action Step: Choose one prosperity habit to practice daily for the next week.
+                        </h5>
+                        <div class="reflection">
+                            <label for="prosperity-as-legacy-reflection">Your Reflection:</label>
+                            <textarea id="prosperity-as-legacy-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('prosperity-as-legacy-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="daily-disciplines card">
+                        <h4>Daily Disciplines for Prosperity</h4>
+                        <h5>
+                            Morning reflection: 5 minutes of gratitude + purpose statement<br>
+                            Financial micro-habit: save $1/day or review one expense<br>
+                            Family connection: one intentional act of service daily<br>
+                            Health habit: short walk or stretch after meals<br>
+                            Evening reflection: note one “vote” you cast for your identity today
+                        </h5>
+                    </article>
+                    <article class="mindset-shifts card">
+                        <h4>Mindset Shifts</h4>
+                        <h5>
+                            From outcome-based (“I want wealth”) → to identity-based (“I am a wise steward”).<br>
+                            From big leaps → to small wins compound over time.<br>
+                            From discipline as restriction → to discipline as freedom and alignment with purpose.
+                        </h5>
+                    </article>
+                    <article class="reflection-&-application card">
+                        <h4>Reflection & Application</h4>
+                        <h5>
+                            Prompts:<br>
+                            “What identity am I casting votes for today?”<br>
+                            “Which habit aligns most with my family-centered values?”<br>
+                            “What small win today reflects prosperity with purpose?”<br>
+                            Encourage journaling or localStorage reflection features (perfect for your site)
+                        </h5>
+                        <div class="reflection">
+                            <label for="reflection-&-application-reflection">Your Reflection:</label>
+                            <textarea id="reflection-&-application-reflection"></textarea>
+                            <button type="button" onclick="saveReflection('reflection-&-application-reflection')">Save Reflection</button>
+                        </div>
+                    </article>
+                    <article class="closing card">
+                        <h4>Closing</h4>
+                        <h5>
+                            Habits aren’t just about personal gain — they ripple into family, community, and future generations.<br>
+                            Prosperity = purpose + discipline + consistency.
+                        </h5>
+                    </article>
+                </div>
+                <button type="button" class="next" aria-label="next card">➡️</button>
+            </section>        
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💷 Sterling Steele 💷 Utah</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
