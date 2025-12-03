@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Prosperity with Purpose</title>
+    <meta name="description" content="This is the contact page for users. We can receive their feedback from here.">
     <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
 </head>
-<body class="contact-page">
+<body class="contact">
     <header>
+        <img src="images/tree-icon-smaller.svg" alt="icon of a tree with roots">
         <h1>Prosperity with Purpose</h1>
+        <button id="hamburger" type="button" aria-label="false">☰</button>
         <nav>
             <a href="index.html">Home</a>
             <a href="faithful-stewardship.html">Faithful Stewardship</a>
@@ -35,5 +39,10 @@
             <button type="submit">Send Message</button>
         </form>
     </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💷 Sterling Steele 💷 Utah</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

@@ -59,14 +59,14 @@ header nav.show {
     justify-content: space-around;
     position: absolute;
     /* outline: 1px solid red; */
-    /* top: 1rem; */
+    top: 1rem;
     /* left: 1rem; */
     background-color: var(--primary-color);
     width: fit-content;
     text-align: center;
     border: 5px solid var(--secondary-color);
     padding: 1rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     border-radius: 1rem;
 }
 
@@ -91,6 +91,52 @@ header nav.show a:hover {
 }
 
 /* main */
+/* contact.html */
+.contact section h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contact section {
+    margin: 1rem 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 3.2rem;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.contact form label {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact form input {
+    padding-bottom: 1rem;
+}
+
+.contact form button {
+    padding: 1rem 0;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.contact form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 /* index.html */
 .hero {
     /* outline: 1px solid red; */
@@ -389,7 +435,7 @@ footer {
 }
 
 @media screen and (min-width: 550px) and (max-width: 700px) {
-    .hero {
+    .hero{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -403,6 +449,11 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         height: 410px;
+    }
+
+    .contact main {
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
 
