@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: var(--neutral-base);
+    background-color: var(--primary-color);
 }
 
 /* header */
@@ -239,7 +239,6 @@ header nav.show a:hover {
 .card p {
     max-width: 250px;
     line-height: 1.4rem;
-    color: white;
 }
 
 .card.active {
@@ -327,7 +326,6 @@ header nav.show a:hover {
 }
 
 .principles section p {
-    color: var(--secondary-color);
     text-align: left;
 }
 
@@ -386,6 +384,30 @@ header nav.show a:hover {
     gap: 1rem;
 }
 
+p {
+    color: var(--neutral-base);
+    background-color: var(--primary-color);
+}
+
+textarea {
+    background-color: var(--neutral-base);
+}
+
+.principles section h5 {
+    background-color: var(--primary-color);
+}
+
+.contact form label {
+    color: var(--secondary-color);
+}
+
+section img {
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
 /* footer */
 footer {
     background: var(--primary-color);
@@ -415,21 +437,21 @@ footer {
 }
 
 @media screen and (min-width: 820px) {
-    .card {
+    .home-page .card {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
-    .carousel button {
+    .home-page .carousel button {
         display: none;
     }
 
-    .cards {
+    .home-page .cards {
         gap: 1rem;
         justify-content: space-around;
     }
 
-    .carousel {
+    .home-page .carousel {
         display: block;
     }
 }
@@ -493,5 +515,88 @@ footer {
         background-color: var(--secondary-color);
         color: var(--primary-color);
         border-radius: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .principles .carousel {
+        display: block;
+    }
+
+    .principles .cards {
+        display: block;
+    }
+
+    .principles .card {
+        display: block;
+    }
+
+    .principles .carousel .prev, .principles .carousel .next {
+        display: none;
+    }
+
+    .principles section h4 {
+        text-align: center;
+    }
+
+    .principles section {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .principles main {
+        background-color: var(--primary-color);
+    }
+
+    .principles .card p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .principles article > * {
+        margin: 1rem 0;
+    }
+
+    .principles section h5 {
+        text-align: center;
+    }
+
+    .principles main h2 {
+        font-size: 4rem;
+    }
+
+    .principles section textarea {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .principles section label {
+        text-align: center;
+    }
+
+    .principles section .reflection button {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .principles section p {
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact section p {
+        font-size: 1.2rem;
+    }
+
+    .card a {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        padding: 0.7rem 1.5rem;
     }
 }
